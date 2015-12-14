@@ -32,7 +32,6 @@ public class MemberList {
 
     }
 
-
     public String scoutsAdultsReport(String number) {
         Collections.sort(members);
         String result = "Adult members of Troop " + number + NEWLINE;

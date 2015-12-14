@@ -37,7 +37,7 @@ public class troop extends MemberList {
             // Check if you have an adult
             if (memberToWrite.getType() == 1) {
                 // write the name first
-                reportString += "  " + memberToWrite.getName() + " - Adult, Position = ";
+                reportString += "  " + memberToWrite.getName() + " -  Adult, Position = ";
                 reportString = getAdultsPositionString(reportString,
                         memberToWrite);
             }  // end if
