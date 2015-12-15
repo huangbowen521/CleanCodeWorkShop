@@ -41,15 +41,16 @@ public class Customer {
 
         statement.addHeader(getName());
 
-        for(Rental each : _rentals) {
+        for (Rental each : _rentals) {
             double thisAmount = each.getAmount();
 
             frequentRenterPoints += each.getFrequentRenterPoints();
             totalAmount += thisAmount;
 
-            statement.addFigure(each.getMovie().getTitle(),thisAmount);
+            statement.addFigure(each.getMovie().getTitle(), thisAmount);
         }
-        statement.addFooter(totalAmount,frequentRenterPoints);
+
+        statement.addFooter(totalAmount, frequentRenterPoints);
 
         return statement.print();
     }
