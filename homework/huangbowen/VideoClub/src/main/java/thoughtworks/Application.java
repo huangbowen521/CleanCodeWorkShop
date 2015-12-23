@@ -1,7 +1,7 @@
 package thoughtworks;
 
 
-public class Applicacion {
+public class Application {
 
 	public static void main(String[] arg) {
 		Movie m1 = new RegularMovie("Sky Captain");
